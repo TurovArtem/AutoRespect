@@ -1,0 +1,551 @@
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loader {
+    text-align: center;
+}
+
+.loader-inner {
+    width: 60px;
+    height: 60px;
+    border: 20px solid #e9ecef;
+    border-top-color: #0d6efd;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+
+.loader-text {
+    font-family: 'Days Sans Black';
+    font-size: 18px;
+    color: #495057;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes zoom {
+    to {
+        width: 350px;
+        height: 350px;
+        border-radius: 175px;
+    }
+}
+
+.content{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background-color: white;
+}
+
+#header__info_right_side{
+    display: flex;
+    flex-direction: column;
+}
+
+#header__social_media{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+#header__social_media img{
+    width: 40px;
+    height: 40px;
+}
+
+#header__text{
+    display: flex;
+    flex-direction: column;
+}
+
+#header__description{
+    margin: 5px 0px 15px 0px;
+    font-size: 14px;
+    font-family: 'Days Sans Black';
+    
+}
+
+#header__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+#header__title{
+    font: 48px 'Days Sans Black';
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+#header__logo{
+    width: 410px;
+    height: 220px;
+}
+
+#header__nav{
+    width: 100%;
+}
+
+#header__nav_menu{
+    list-style-type: none;
+    display: flex;
+    padding: 0px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(209, 3, 3);
+    height: 50px;
+}
+
+#header__nav_menu li{
+    font: 18px 'Days Sans Black';
+}   
+
+#header__nav_menu a:visited, #header__nav_menu a:link{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    font-family: 'Days Sans Black';
+    color: rgb(0, 0, 0);
+    gap: 50px;
+}
+
+main section{
+    width: 100%;
+    display: flex;
+}
+
+main h1{
+    font-size: 44px;
+}
+
+#first__page{
+    justify-content: center;
+    gap: 50px;
+}
+
+#first__page_list{
+    text-indent: 5px;
+    text-align: left;
+    font-size: 22px;
+    margin: 0px;
+}
+
+#first__page_list li{
+    padding-bottom: 5px;
+}
+
+#first__page_list li::marker{
+    content: '-';
+    margin-right: 5px;
+}
+
+#first__page_description{
+    margin: 0px;
+}
+
+#first__page_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    gap: 50px;
+    width: 60%;
+}
+
+#side__img{
+    width: 485px;
+    height: 670px;
+}
+
+#first__page_title{
+    text-align: right;
+    margin: 0px;
+}
+
+#first__page_button{
+    align-self: flex-end;
+    margin: 0px;
+    border: 0px;
+    width: 400px;
+    height: 150px;
+    border-radius: 100px;
+    font: 40px 'Days Sans Black';
+    color: white;
+    background-color: rgb(209, 3, 3);
+}
+
+#first__page_button:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+}
+
+#second__page_services h1{
+    margin: 0px;
+}
+
+#second__page h2{
+    margin: 0px;
+    font-size: 30px;
+}
+
+#second__page_services ul{
+    padding-left: 20px;
+    margin: 0px;
+}
+
+#second__page_services span{
+    font-size: 22px;
+}
+
+#second__page{
+    width: 100%;
+}
+
+#map{
+    height: 600px;
+    width: 70%;
+}
+
+#second__page img{
+    width: 500px;
+    height: 500px;
+}
+
+#second__page_services{
+    justify-items: center;
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr;
+    row-gap: 50px;
+}
+
+#second__page_services div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#first__page{
+    flex-direction: row;
+}
+
+#second__page, #third__page, #fourth__page{
+    flex-direction: column;
+}
+
+#whatsappForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input{
+    display: block;
+}
+
+.input input, textarea{
+    width: 50%;
+    height: 50px;
+    margin: 10px 5px 0px 0px;
+}
+
+#input__bottom select{
+    margin: 10px 5px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+
+#whatsappForm__button{
+    border: 0px;
+    width: 400px;
+    height: 150px;
+    border-radius: 100px;
+    margin-top: 50px;
+    font: 40px 'Days Sans Black';
+    color: white;
+    background-color: rgb(209, 3, 3);
+}
+
+#whatsappForm button:hover{
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.37);
+}
+
+#rider{
+    width: 527px;
+    height: 527px;
+}
+
+#row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 50px auto 0px auto;
+    width: 80%;
+    background-color: #495057;
+    font: 12px 'Days Sans Black';
+}
+
+footer nav{
+    padding: 50px 10px;
+}
+
+#footer__nav{
+    display: block;
+    list-style-type: none;
+}
+
+#footer__nav li{
+    margin-top: 5px;
+}
+
+#footer__nav a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+#third__page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#third__page_info{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+#fourth__page{
+    background-color: #0080ff6e;
+    padding: 50px 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer__title{
+    font-size: 48px;
+}
+
+#experts__block{
+    flex-direction: column;
+}
+
+#experts__block h2, h3{
+    margin: 10px 0px 0px 0px;
+}
+
+#experts__block img{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+
+#experts__block img:hover{
+    animation: zoom 0.5s ease-out forwards;
+}
+
+#experts__block_photos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#experts__block_photos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#textarea{
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+}
+
+@media  screen and (max-width: 1700px) {
+    #experts__block_photos{
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+    #rider{
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media  screen and (max-width: 1300px) {
+
+    #first__page{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+    }
+    #header__info{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #header__logo{
+        width: 310;
+        height: 220;
+    }
+    #header__nav_menu{
+        flex-direction: column;
+        height: 100%;
+    }
+    #map{
+        width: 400px;
+    }
+    #header__title{
+        font-size: 32px;
+        margin: 0px;
+    }
+    #header__nav_menu li{
+        padding: 10px 0px;
+    }
+    #side__img{
+        width: 0px;
+        height: 0px;
+    }
+    #first__page_info{
+        align-items: center;
+        width: 100%;
+    }
+    #first__page_title{
+        text-align: center;
+    }
+    #first__page_list{
+        font-size: 18px;
+    }
+    #first__page_button{
+        align-self: center;
+        width: 300px;
+        height: 100px;
+        font-size: 24px;
+    }
+    #second__page{
+        align-items: center;
+    }
+    #second__page_services{
+        grid-template: repeat(4, 1fr) / 1fr;
+    }
+    #experts__block_photos{
+        display: flex;
+        flex-direction: column;
+    }
+    #experts__block_photos img{
+        width: 250px;
+        height: 250px;
+    }
+    #header__info{
+        align-items: center;
+    }
+    #header__info_right_side{
+        align-items: center;
+        text-align: center;
+    }
+    #fourth__page h1, p{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    #fourth__page{
+        width: 100%;
+        padding: 20px 50px;
+    }
+    #whatsappForm__button{
+        align-self: center;
+        width: 300px;
+        font-size: 24px;
+        height: 100px;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    footer nav{
+        padding: 0px;
+    }
+    #footer__nav{
+        padding: 0px;
+        text-align: center;
+        align-items: center;
+    }
+    #footer__title{
+        text-align: center;
+        margin: 10px 0px;
+        font-size: 32px;
+    }
+    #experts__block_title{
+        text-align: center;
+    }
+    #third__page_title{
+        text-align: center;
+    }
+    #second__page_services img{
+        width: 300px;
+        height: 300px;
+    }
+    .input, #textarea{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .input input{
+        width: 100%;
+    }
+}
